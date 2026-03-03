@@ -20,12 +20,12 @@ RUN yum --setopt=tsflags='' -y install initscripts
 
 
 # Generate keys
-COPY ssh_host_rsa_key /etc/ssh/ssh_host_rsa_key
-RUN chmod 600 /etc/ssh/ssh_host_rsa_key
-COPY ssh_host_ed25519_key /etc/ssh/ssh_host_ed25519_key
-RUN chmod 600 /etc/ssh/ssh_host_ed25519_key
-COPY ssh_host_ecdsa_key /etc/ssh/ssh_host_ecdsa_key
-RUN chmod 600 /etc/ssh/ssh_host_ecdsa_key
+# COPY ssh_host_rsa_key /etc/ssh/ssh_host_rsa_key
+# RUN chmod 600 /etc/ssh/ssh_host_rsa_key
+# COPY ssh_host_ed25519_key /etc/ssh/ssh_host_ed25519_key
+# RUN chmod 600 /etc/ssh/ssh_host_ed25519_key
+# COPY ssh_host_ecdsa_key /etc/ssh/ssh_host_ecdsa_key
+# RUN chmod 600 /etc/ssh/ssh_host_ecdsa_key
 
 
 RUN adduser aknig007
